@@ -49,6 +49,11 @@
 #' \code{NA} values are allowed, although they are removed before the
 #' calculative work proceeds.
 #'
+#' If any of the buckets of \code{x} (optionally stratified by \code{z}) have
+#' < 20 cases, a warning is thrown. If P(Y=1) is 1 or 0 in any bucket(s),
+#' rendering log(P/(1-P)) undefined, a note indicating so (and indicating where)
+#' appears on the plot.
+#'
 #' @examples
 #' set.seed(11)
 #' xx <- rnorm(n = 2500, mean = 1, sd = 1)

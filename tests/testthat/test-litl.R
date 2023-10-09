@@ -32,4 +32,6 @@ test_that("warnings occur as intended", {
                       z = c(rep(NA, 100), zz),
                       ntiles_x = 8, ntiles_z = 3),
                  'input variables contained NAs: dropping \\d+ incomplete cases')
+  expect_warning(litl(x = xx[1:60], y = yy[1:60], ntiles_x = 4),
+                 '\\d+ ntile.+')
 })

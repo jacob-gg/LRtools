@@ -41,9 +41,9 @@
 #' @param plot_line The type of line to be fit in the linearity-assessment plot:
 #' \code{'lm'} (default), \code{'loess'}, or \code{NULL} (no line).
 #'
-#' @return Invisibly, a two-element list: The first element, \code{[['data']]}
-#' contains the data displayed in the plot; the second, \code{[['plot']]} is the
-#' plot object, with class \code{ggplot}.
+#' @return Invisibly, a two-element list: The first element, \code{[['data']]},
+#' contains the data displayed in the plot; the second, \code{[['plot']]}, is
+#' the plot object, with class \code{ggplot}.
 #'
 #' \code{x}, \code{y}, and \code{z} (if given) must be the same length.
 #' \code{NA} values are allowed, although they are removed before the

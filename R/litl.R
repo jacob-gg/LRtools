@@ -35,7 +35,7 @@
 #' @param z An optional second predictor variable, handled variously depending
 #' on its type (see \bold{Details}).
 #' @param ntiles_x A double or integer value indicating how many buckets to
-#' divide \code{x} into.
+#' divide \code{x} into (10 by default).
 #' @param ntiles_z An optional double or integer value indicating how many
 #' buckets to divide \code{z} into (if \code{z}) is provided.
 #' @param plot_line The type of line to be fit in the linearity-assessment plot:

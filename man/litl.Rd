@@ -16,7 +16,7 @@ outcome variable.}
 on its type (see \bold{Details}).}
 
 \item{ntiles_x}{A double or integer value indicating how many buckets to
-divide \code{x} into.}
+divide \code{x} into (10 by default).}
 
 \item{ntiles_z}{An optional double or integer value indicating how many
 buckets to divide \code{z} into (if \code{z}) is provided.}
@@ -25,13 +25,18 @@ buckets to divide \code{z} into (if \code{z}) is provided.}
 \code{'lm'} (default), \code{'loess'}, or \code{NULL} (no line).}
 }
 \value{
-Invisibly, a two-element list: The first element, \code{[['data']]}
-contains the data displayed in the plot; the second, \code{[['plot']]} is the
-plot object, with class \code{ggplot}.
+Invisibly, a two-element list: The first element, \code{[['data']]},
+contains the data displayed in the plot; the second, \code{[['plot']]}, is
+the plot object, with class \code{ggplot}.
 
 \code{x}, \code{y}, and \code{z} (if given) must be the same length.
 \code{NA} values are allowed, although they are removed before the
 calculative work proceeds.
+
+If any of the buckets of \code{x} (optionally stratified by \code{z}) have
+< 20 cases, a warning is thrown. If P(Y=1) is 1 or 0 in any bucket(s),
+rendering log(P/(1-P)) undefined, a note indicating so (and indicating where)
+appears on the plot.
 }
 \description{
 \code{litl()} = \code{l}inear \code{i}n \code{t}he \code{l}ogit.

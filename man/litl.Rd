@@ -51,9 +51,9 @@ predictor variables, \code{x} and \code{z}, and a binary outcome, \code{y}.
 \code{ntiles_x} quantile buckets (10 by default), calculates the log-odds
 of \code{y} in each bucket, and generates a corresponding plot, as described
 \href{https://library.virginia.edu/data/articles/graphical-linearity-assessment-one-and-two-predictor-logistic-regressions}{here}
-and in Harrell (2015, \emph{Regression Modeling Strategies}).
-If \code{z} is given, observations are stratified before quantile groups are
-formed based on \code{x}:
+and in \emph{Regression Modeling Strategies} (Harrell, 2015). If \code{z} is
+given, observations are stratified before quantile groups are formed based
+on \code{x}:
 
 \itemize{
  \item{If \code{z} is numeric and not binary, and if a numeric value of

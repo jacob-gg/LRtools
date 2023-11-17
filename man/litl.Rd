@@ -50,7 +50,8 @@ predictor variables, \code{x} and \code{z}, and a binary outcome, \code{y}.
 \code{x} and \code{y} are required: \code{litl()} divides \code{x} into
 \code{ntiles_x} quantile buckets (10 by default), calculates the log-odds
 of \code{y} in each bucket, and generates a corresponding plot, as described
-Eventual-StatLab-Link and in Harrell (2015, \emph{Regression Modeling Strategies}).
+\href{https://library.virginia.edu/data/articles/graphical-linearity-assessment-one-and-two-predictor-logistic-regressions}{here}
+and in Harrell (2015, \emph{Regression Modeling Strategies}).
 If \code{z} is given, observations are stratified before quantile groups are
 formed based on \code{x}:
 
